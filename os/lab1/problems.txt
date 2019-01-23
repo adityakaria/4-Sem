@@ -1,0 +1,7 @@
+Operating System
+Laboratory Assignment – 1
+
+1. Create a file in your local machine and perform read/write system call operation from a source to any destination inside your operating system.
+2. Create your own Virtual Machine and boot Ubuntu (64-bit) on the existing host operating system using Oracle virtual box.
+3. Implement fork() and exec() system calls using c for a process creation and get the parent id and child id of the processes created.
+4. Write a program for factorial calculation using fork() system call.
