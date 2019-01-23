@@ -39,13 +39,13 @@ int main(void) {
     fclose(dest);
     
     // to  delete original file and check for errors
-    int status = remove(sourceName);
-    if (status == 0) {
-        printf("Original file deleted Succesfully\n");
-    }
-    else {
-        printf("ERROR: Could not delete original file");
-    }
+    // int status = remove(sourceName);
+    // if (status == 0) {
+    //     printf("Original file deleted Succesfully\n");
+    // }
+    // else {
+    //     printf("ERROR: Could not delete original file");
+    // }
 
     printf("\nOPERATION SUCCESSFULL\n");
     return 0;
