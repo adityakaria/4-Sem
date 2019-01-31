@@ -1,0 +1,6 @@
+Operating System
+Laboratory Assignment – 2
+
+1. Create a simple Hello World kernel module, compile it and insert it to the existing kernel running in your machine.					     (5)
+2. Create a char device driver; name can be of any choice. Make it read−only char device that is designed to say how many times you've read from the dev file.											   (15)
+3. Device files are supposed to represent physical devices. Most physical devices are used for output as well as input, so there has to be some mechanism for device drivers in the kernel to get the output to send to the device from processes. This is done by opening the device file for output and writing to it, just like writing to a file. Create an input/output character device. Implement it using device_write driver.				   (20)									   
