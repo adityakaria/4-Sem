@@ -53,6 +53,7 @@ int main(void) {
         freeMan.push(men.at(i));
     }
     
+    // Marriage mapping holds the engagement records with the woman name as the key
     map<string, string> marriage;
     while(!(freeMan.empty())) {
         string name = freeMan.front();
@@ -61,6 +62,7 @@ int main(void) {
         string woman = mPref.at(0);
         // cout << "\t" << woman << endl;
 
+        // If marriage record of woman exists (i.e., is engaged)
         if (marriage.count(woman) > 0) {
             menPref.at(name).erase(menPref.at(name).begin());
             int oldIndex,newIndex;
@@ -69,18 +71,21 @@ int main(void) {
 
             oldIndex = find(wPref.begin(), wPref.end(), prevMan) - wPref.begin();
             newIndex = find(wPref.begin(), wPref.end(), name) - wPref.begin();
+
+            // If woman prefers new man over her current partner
             if (newIndex < oldIndex) {
                 marriage[woman] = name;
                 freeMan.pop();
                 freeMan.push(prevMan);
             }
         }
-        else {
+        else { // When woman is not engaged, just pair her with the current man.
             marriage[woman] = name;
             freeMan.pop();
         }
     }
     // cout << endl << endl;
+    // To print the final matching
     for (int i = 0; i < n; i++) {
         cout << marriage.at(women.at(i)) << "\t->  " << women.at(i) << endl;
     }
