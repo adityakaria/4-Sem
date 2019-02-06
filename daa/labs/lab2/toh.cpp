@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 char source = 'S', dest = 'T', inter = 'I';
@@ -8,6 +9,10 @@ int main(void) {
     int n;
     cout << "Enter number of Disks";
     cin >> n;
+    if (n <= 0) {
+        cout<< "ERROR: Please enter a valid integer"<<endl;
+        exit(0);
+    }
 
     findSol(n, source, dest, inter);
     return 0;
