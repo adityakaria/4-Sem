@@ -1,6 +1,6 @@
 # 4-Sem
 
-A repository for all the lab assignments in the fourth semester of my IT course at NITK Surathkal.
+A repository for all the lab assignments and practice problems in the fourth semester of my IT course at NITK Surathkal.
 
 ---
 
@@ -9,8 +9,8 @@ A repository for all the lab assignments in the fourth semester of my IT course 
 - Design and Analysis of Algorithms (IT252)
 - Computer Communication and Networking (IT251)
 - Operating Systems (IT250)
-- Ruby on rails (Test applications)
-- Miscellaneous programs while learning C++
+- Ruby on rails (Web Applications)
+- Miscellaneous programs while learning C++ and C
 
 ---
 
@@ -22,3 +22,4 @@ A repository for all the lab assignments in the fourth semester of my IT course 
 - HTML
 - CSS
 - Java
+- Javascript

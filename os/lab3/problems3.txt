@@ -1,0 +1,7 @@
+Operating System
+Laboratory Assignment – 3
+
+    1. Code a group chat application in Java using UDP (DatagramSocket)	   (10)           
+    2. Give a solution to solve the bounded buffer problem for a multi-processing environment using threads.                                          		   		   (10)
+    3. Develop an application to access objects on a remote server from your client system.							                                          (10)         
+    4. Code a C program to make two processes communicate with each other in both the ways using pipes.            			                                                      (10)

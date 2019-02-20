@@ -64,7 +64,7 @@ int main(void) {
 
         // If marriage record of woman exists (i.e., is engaged)
         if (marriage.count(woman) > 0) {
-            menPref.at(name).erase(menPref.at(name).begin());
+            menPref.at(name).erase(menPref.at(name).begin()); // Erase the first woman in the man's preference list after reading her name
             int oldIndex,newIndex;
             string prevMan = marriage.at(woman);
             vector <string> wPref = womenPref.at(woman);
