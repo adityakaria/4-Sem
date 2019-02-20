@@ -8,7 +8,7 @@
 #define  CLASS_NAME  "ebb"        ///< The device class -- this is a character device driver
  
 MODULE_LICENSE("GPL");            ///< The license type -- this affects available functionality
-MODULE_AUTHOR("ANISH PATIL");    ///< The author -- visible when you use modinfo
+MODULE_AUTHOR("ADITYA KARIA");    ///< The author -- visible when you use modinfo
 MODULE_DESCRIPTION("A simple Linux char driver for linux system");  ///< The description -- see modinfo
 MODULE_VERSION("0.1");            ///< A version number to inform users
  
