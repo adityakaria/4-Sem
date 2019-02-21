@@ -11,6 +11,9 @@ Note: An element is said to be in majority in a set if it appears MORE than n/2 
 Approach: Divide & Conquer
 T(n) = 2.T(n/2) + O(n^1)
 Using master's theorum, we get the required time complexity.
+
+
+To try: Implementing in linear time
 */
 
 #include <bits/stdc++.h>
