@@ -9,7 +9,6 @@ A repository for all the lab assignments and practice problems in the fourth sem
 - Design and Analysis of Algorithms (IT252)
 - Computer Communication and Networking (IT251)
 - Operating Systems (IT250)
-- Ruby on rails (Web Applications)
 - Miscellaneous programs while learning C++ and C
 
 ---
@@ -18,8 +17,5 @@ A repository for all the lab assignments and practice problems in the fourth sem
 
 - C++
 - C
-- Ruby
-- HTML
-- CSS
 - Java
-- Javascript
+- Python
