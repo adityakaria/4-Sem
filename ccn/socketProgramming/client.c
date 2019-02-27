@@ -11,6 +11,7 @@
 
 int main(int argc, char const *argv[])
 {
+    while(1) {
     struct sockaddr_in address;
     int sock = 0, valread;
     struct sockaddr_in serv_addr;
@@ -37,7 +38,7 @@ int main(int argc, char const *argv[])
         return -1; 
     } 
 
-    while(1) {
+    
         printf("Client: Please enter your message:  \t");
         char *clientMessage;
         scanf("%s", clientMessage);
