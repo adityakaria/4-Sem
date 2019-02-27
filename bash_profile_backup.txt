@@ -36,6 +36,12 @@
 # for ImageMagick
     export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
 
+# For PHP Laravel
+    export PATH=/opt/local/bin:/opt/local/sbin:/usr/local/opt/openssl/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/imagemagick@6/bin:/opt/local/bin:/opt/local/sbin:/Users/adityakaria/.rvm/gems/ruby-2.3.2/bin:/Users/adityakaria/.rvm/gems/ruby-2.3.2@global/bin:/Users/adityakaria/.rvm/rubies/ruby-2.3.2/bin:/usr/local/opt/openssl/bin:/usr/local/opt/icu4c/bin:/usr/local/opt/icu4c/sbin:/usr/local/opt/imagemagick@6/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/mysql/bin:/usr/local/mysql/support-files:/Library/TeX/texbin:/usr/local/share/dotnet:/opt/X11/bin:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/usr/local/mysql/bin:~/flutter/bin:/Users/adityakaria/Library/Python/2.7/bin:/Users/adityakaria/Library/Python/3.7/bin:/Users/adityakaria/.rvm/bin:/usr/local/mysql/bin:~/flutter/bin:/Users/adityakaria/Library/Python/2.7/bin:/Users/adityakaria/Library/Python/3.7/bin:/Users/adityakaria/.composer/vendor/bin
+
+
+	# "GEM_HOME"=>"/Users/adityakaria/.rvm/gems/ruby-2.3.2"
+    # "GEM_PATH"=>"/Users/adityakaria/.rvm/gems/ruby-2.3.2:/Users/adityakaria/.rvm/gems/ruby-2.3.2@global"
 # ----------------------------------
 #            MY ALIASES
 # ----------------------------------
@@ -77,7 +83,7 @@
     # Aliases for mysql
     alias mysql=/usr/local/mysql/bin/mysql
     alias mysqladmin=/usr/local/mysql/bin/mysqladmin
-
+    alias kmsi="sudo kill -9 `cat ./tmp/pids/server.pid`"
 
 # To make a continuous backup of the .bash_profile file (I learnt from my mistakes)
 # ----------------------------------------------------------
@@ -88,9 +94,6 @@
     git add . > /dev/null
     git commit --quiet -m "updated dotfiles | `date`" > /dev/null
     cd $cur
-
-
-
 
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
@@ -127,7 +130,6 @@
 # spotlight: Search for a file using MacOS Spotlight's metadata
 # -----------------------------------------------------------
     spotlight () { mdfind "kMDItemDisplayName == '$@'wc"; }
-
 
 #   ---------------------------
 #   6. NETWORKING
@@ -224,8 +226,6 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=/Users/adityakaria/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;export PATH="/usr/local/opt/openssl/bin:$PATH"
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 ##
 # Your previous /Users/adityakaria/.bash_profile file was backed up as /Users/adityakaria/.bash_profile.macports-saved_2019-01-22_at_18:23:09
 ##
@@ -234,3 +234,4 @@ HEROKU_AC_BASH_SETUP_PATH=/Users/adityakaria/Library/Caches/heroku/autocomplete/
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
