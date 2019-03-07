@@ -23,7 +23,7 @@ public class GroupChat
                 MulticastSocket socket = new MulticastSocket(port); 
               
                 // Since we are deploying 
-                socket.setTimeToLive(0); 
+                socket.setTimeToLive(1); 
                 //this on localhost only (For a subnet set it as 1) 
                   
                 socket.joinGroup(group); 
