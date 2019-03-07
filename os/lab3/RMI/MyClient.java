@@ -1,0 +1,12 @@
+import java.rmi.*;  
+public class MyClient{  
+    public static void main(String args[]){  
+        try{  
+            Adder stub=(Adder)Naming.lookup("rmi://localhost:5000/abcd");  
+            System.out.println(stub.add(6,9));  
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }  
+    }  
+}  
