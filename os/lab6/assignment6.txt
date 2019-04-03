@@ -1,0 +1,14 @@
+Operating Systems
+Laboratory Assignment – 6
+
+1. There are various pages waiting to be placed in the frames of the Main Memory (RAM). Consider the following reference string and calculate the Hit Ratio and Miss Ratio of the pages using the following algorithms.
+1. First-Come First-Serve (FIFO)
+2. Optimal Page Replacement 
+3. Least Recently Used (LRU)
+         State which algorithm best suites the given reference string.
+Reference String: 9, 2, 1, 2, 0, 5, 0, 4, 2, 3, 0, 3, 1, 2, 9, 0, 5, 3, 4, 0
+		                                                                                           (15)
+	   
+2. A typical disk contains 200 tracks (0-199). The request Queue for accessing various tracks on the disk is given as follows,
+Request Queue: 98, 67, 78, 30, 10, 45, 180, 20, 150, 35 
+Considering the current R/W head position as 60, calculate the total number of track movements using First-Come First-Serve (FCFS) and Shortest Seek Time First (SSTF) algorithms respectively. Also calculate the total time taken for the R/W head movement in nanoseconds and state which algorithm performs better.									   (15)
