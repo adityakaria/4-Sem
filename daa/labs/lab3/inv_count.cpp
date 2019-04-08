@@ -49,7 +49,7 @@ int mergeSort(vector<int> auxList, int low, int high) {
 
     // Check if low < high
     if (low >= high - 1) {
-        cout << "----END----" << low << ">=" << high << endl;
+        cout << "----END---- " << low << ">=" << high << endl;
         return 0;
     }
 
@@ -73,7 +73,7 @@ int mergeSort(vector<int> auxList, int low, int high) {
 
 int merge(vector<int> auxList, int low, int mid, int high) {
     auxList.clear();
-    cout << "\tAuxlist size "<<auxList.size() << endl;
+    // cout << "\tAuxlist size "<<auxList.size() << endl;
     cout <<endl <<"While Merging: " << low << " | " << mid << " | " << high << endl;
     for (int p = low; p < high; p++) {
         if (p == mid) {
@@ -96,9 +96,10 @@ int merge(vector<int> auxList, int low, int mid, int high) {
             auxList.push_back(numList[j]);
             j++;
             invCount += (mid - i ); 
+            cout << "\t\tX" << endl;
             cout << "\t\t~> " << mid - i << endl;
             // invCount++;
-            cout << "\t\tX" << endl;
+            
         }
         k++;
     }
@@ -113,11 +114,14 @@ int merge(vector<int> auxList, int low, int mid, int high) {
         j++;
     }
     int m = low;
+    cout << "[ ";
     for (int p = 0; p < auxList.size(); p++) {
         numList[m] = auxList[p];
+
         cout << numList[m] << "\t";
         m++;
     }
+    cout << " ]";
     cout << endl;
 
     cout <<"\t\t" <<low<<", "<<mid<<", "<<high<<" --> "<<invCount << endl;
